@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>
+        documentation - test
+    </title>
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="sdsad"/>
+    <link rel="icon" type="image/svg+xml" href="https://roltu.com"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://roltu.com">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://roltu.com">    
+        
+    <meta property="og:image" content="https://roltu.com"/>
+    <meta property="og:url" content="https://roltu.com/">
+    <meta property="og:title" content="documentation - test" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="sdsad"/>
+    
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content=""/>
+    <meta name="twitter:title" content="documentation - test" />
+    <meta name="twitter:description" content="sdsad" />
+    <meta name="twitter:image" content="https://roltu.com"/>
+
+    <link rel="canonical" href="https://roltu.com/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin=""/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&subset=latin&display=swap"
+          rel="stylesheet"/>
+    
+    <link rel="preload" href="https://roltu.com/_lib/index.css" as="style">
+    <link rel="stylesheet" href="https://roltu.com/_lib/index.css"/>
+    <style>
+        :root {
+            color-scheme: light dark;
+        }
+        html {
+            scroll-padding-top: 120px;
+            visibility: hidden;
+            opacity: 0;
+        }
+    </style>
+    <script>
+        function getInitialTheme() {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            if (savedTheme === 'light' || savedTheme === 'dark') return savedTheme;
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        const theme = getInitialTheme();
+        document.documentElement.classList.add('theme-' + theme);
+    </script>
+    
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+<meta property="og:image" content="https://your-domain.com/og-image.png" />
+<meta name="twitter:image" content="https://your-domain.com/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@your-twitter-handler" />
+
+    
+</head>
+<body>
+
+<div id="root">
+    <sl-drawer id="menu-drawer" label="Documentation" class="drawer__control" placement="top">
+        <div class="body__drawer">
+            <div class="items">
+                
+                    
+                        <sl-button 
+                            class="nav_button  current " 
+                            size="medium" 
+                            href="/"
+                        >
+                            Documentation
+                        </sl-button>
+                         
+                
+            </div>
+            <sl-divider class="divider__drawer"></sl-divider>
+            <nav class="tree">
+                <div class="scroll-panel">
+                    
+                        
+                            
+                            
+                            
+                                <sl-tree class="tree__with_lines" selection="leaf">
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="0c3yO3VMLOryBw6udUjoY" 
+                                            style="--indent-level: 0"
+                                             selected 
+                                            class="leaf"
+                                        >
+                                            <a href="/">documentation</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                            
+                                </sl-tree>
+                            
+                        
+                        
+                </div>
+            </nav>
+        </div>
+    </sl-drawer>
+
+    <div class="body__wrapper">
+        <div class="nav__container">
+            <nav>
+                <div class="border-box"></div>
+                <div class="logo">
+                    
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+  <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
+</svg>
+
+                        </div>
+                    
+                    <div>
+                        
+                            <span class="line-clamp-1">[Company Name]</span>
+                        
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="container">
+                        
+                            
+                                <sl-button 
+                                    class="nav_button  current " 
+                                    size="medium" 
+                                    href="/"
+                                >
+                                    Documentation
+                                </sl-button>
+                                                    
+                        
+                    </div>
+                </div>
+                <div class="search">
+                    <div>
+                        <sl-button id="search-button" class="search_button">
+                            <sl-icon slot="prefix" name="search"></sl-icon>
+                            Search
+                            <div slot="suffix">
+                                <div class="button__prefix-wrapper">
+                                    <div class="button__prefix-container">
+                                        <sl-icon name="command"></sl-icon>
+                                        <span class="font-w-semibold">K</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </sl-button>
+                    </div>
+                    <div>
+                        <sl-dropdown id="theme-selector" hoist>
+                            <sl-button slot="trigger" class="nav_button">
+                                <sl-icon id="theme-selector-icon" slot="prefix" name="sun"></sl-icon>
+                            </sl-button>
+                            <sl-menu id="theme-selector-menu">
+                                <sl-menu-item type="checkbox" value="light">Light</sl-menu-item>
+                                <sl-menu-item type="checkbox" value="dark">Dark</sl-menu-item>
+                                <sl-menu-item type="checkbox" value="system">System</sl-menu-item>
+                            </sl-menu>
+                        </sl-dropdown>
+                    </div>
+                    <div class="menu">
+                        <sl-button id="menu-open-trigger" class="nav_button" outline>
+                            <sl-icon slot="prefix" name="list"></sl-icon>
+                        </sl-button>
+                    </div>
+                </div>
+            </nav>    
+        </div>
+        <div class="content__container">
+            <aside class="tree">
+                <nav id="nav-tree" class="tree">
+                    
+                        
+                            
+                            
+                            
+                                <sl-tree class="tree__with_lines" selection="leaf">
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="0c3yO3VMLOryBw6udUjoY" 
+                                            style="--indent-level: 0"
+                                             selected 
+                                            class="leaf"
+                                        >
+                                            <a href="/">documentation</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                            
+                                </sl-tree>
+                            
+                        
+                        
+                </nav>
+            </aside>
+            
+            <article>
+                <main>
+                    <div class="content">
+                        <h1 id="esewa-bank" dir="ltr"><span style="white-space: pre-wrap;">eSewa-Bank </span></h1><p dir="ltr"><br></p><p dir="ltr"><span style="white-space: pre-wrap;">Hello, how to add</span></p><p dir="ltr"><br></p><div class="code-block"><div class="toolbar-cell"><div class="language-title">Shell</div><div><sl-copy-button value="sd
+dssfsf
+df
+dsf
+dfd
+sf
+ds
+f
+ds" copy-label="Copy to clipboard" success-label="The code is copied to clipboard"></sl-copy-button></div></div><div class="code-cell" style="height: 250.758px;"><div class="container"><pre class="shiki shiki-themes" style="background-color:#f1f5f9;--shiki-dark-bg:#0d1117;color:#1f2328;--shiki-dark:#e6edf3" tabindex="0"><code class="code-view"><span class="line" data-line="1"><span style="color:#953800;--shiki-dark:#FFA657">sd</span></span>
+<span class="line" data-line="2"><span style="color:#953800;--shiki-dark:#FFA657">dssfsf</span></span>
+<span class="line" data-line="3"><span style="color:#953800;--shiki-dark:#FFA657">df</span></span>
+<span class="line" data-line="4"><span style="color:#953800;--shiki-dark:#FFA657">dsf</span></span>
+<span class="line" data-line="5"><span style="color:#953800;--shiki-dark:#FFA657">dfd</span></span>
+<span class="line" data-line="6"><span style="color:#953800;--shiki-dark:#FFA657">sf</span></span>
+<span class="line" data-line="7"><span style="color:#953800;--shiki-dark:#FFA657">ds</span></span>
+<span class="line" data-line="8"><span style="color:#953800;--shiki-dark:#FFA657">f</span></span>
+<span class="line" data-line="9"><span style="color:#953800;--shiki-dark:#FFA657">ds</span></span></code></pre></div></div></div><p dir="ltr"><span style="white-space: pre-wrap;">dfds</span></p><p dir="ltr"><span style="white-space: pre-wrap;">dfdsf</span></p><p dir="ltr"><br></p><div class="table-box-wrapper"><div class="table-wrapper"><table data-lexical-row-striping="true"><colgroup><col style="width: 150px;"><col style="width: 150px;"></colgroup><tbody><tr><th><p dir="ltr" style="text-align: center;"><b><strong style="font-size: var(--sl-font-size-small); color: var(--sl-color-gray-500); white-space: pre-wrap;">isofolder</strong></b></p></th><th><p style="text-align: center;"><b><strong style="font-size: var(--sl-font-size-small); color: var(--sl-color-gray-500); white-space: pre-wrap;">Title</strong></b></p></th></tr><tr><td><p><span style="white-space: pre-wrap;">Value</span></p></td><td><p><span style="white-space: pre-wrap;">Value</span></p></td></tr><tr><td><p><span style="white-space: pre-wrap;">Value</span></p></td><td><p><span style="white-space: pre-wrap;">Value</span></p></td></tr></tbody></table></div></div><h1 dir="ltr"><br></h1>
+                    </div>
+                </main>
+                <div class="footer">
+                    <div class="content">
+                        <div class="date">
+                            <div>Dec 6, 2024</div>
+                        </div>
+                         <div></div> 
+                         <div></div> 
+                    </div>
+                </div>
+            </article>
+            <aside class="toc">
+                <nav class="toc">
+                    
+                </nav>
+            </aside>
+        </div>
+        <footer>
+            <div class="stack__column stack__gap-4 stack__center">
+                
+                <div class="stack__row stack__center">
+                    <span><span>Year &copy; Company Name</span></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<sl-dialog id="search-dialog" class="dialog_control dialog__search">
+    <div slot="label">
+        <p>Search</p>
+    </div>
+    <div class="pane stack__column stack__gap-4">
+        <div>
+            <sl-input
+                id="search-input"
+                type="text"
+                size="small"
+                autocomplete="off"
+                autofocus
+                clearable
+                placeholder="Type text you want to search..."
+            >
+            </sl-input>
+        </div>
+        <div id="search-result" class="stack__column stack__gap-4 search-result">
+        </div>
+        <div id="search-footer" class="footer"></div>
+    </div>
+</sl-dialog>
+<script type="module" src="https://roltu.com/_lib/index.js" data-shoelace="https://roltu.com/_lib"></script>
+<script type="module">
+    import {initPage, initTheme, initSearch, initToc} from 'https://roltu.com/_lib/init.js';
+    import {preInitTree} from 'https://roltu.com/_lib/pre.js';
+    preInitTree();
+    await initPage();
+    await initTheme('light');
+    await initSearch('https://roltu.com', '1733490595085');
+    document.documentElement.style.visibility = 'visible';
+    document.documentElement.style.opacity = '1';
+    initToc();
+</script>
+
+</body>
+</html>

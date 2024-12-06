@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://roltu.com/sitemap_index.xml
